@@ -10,6 +10,13 @@
     "circleci",
     "circle"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/IndieGoGo/hubot-circleci-notify.git"
+  },
+  "bugs": {
+    "url": "https://github.com/IndieGoGo/hubot-circleci-notify/issues"
+  },
   "dependencies": {
     "coffee-script": "~1.6"
   },
