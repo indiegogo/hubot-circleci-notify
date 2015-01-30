@@ -1,7 +1,7 @@
 {
   "name": "hubot-circleci-notify",
   "description": "Hubot CircleCI notifications",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "author": "Jack Weiss (https://github.com/jacobaweiss)",
   "license": "MIT",
   "keywords": [
