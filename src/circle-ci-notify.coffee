@@ -53,11 +53,11 @@ module.exports = (robot) ->
       robot.brain.save
       robot.send {room: user}, 'You will receive an alert when this build finishes.'
 
-  robot.respond /(?:ci|circle) alert (\w+) ([\w\d\/\.\-]+)/i, (msg) ->
+  robot.respond /(?:ci|circle) alert ([\w\d\/\.\-]+) ([\w\d\/\.\-]+)/i, (msg) ->
     alert = new CircleCIAlert robot, msg
     alert.addWatcher()
 
-  robot.respond /(?:ci|circle) (?:rm|remove) alert (\w+) ([\w\d\/\.\-]+)/i, (msg) ->
+  robot.respond /(?:ci|circle) (?:rm|remove) alert ([\w\d\/\.\-]+) ([\w\d\/\.\-]+)/i, (msg) ->
     alert = new CircleCIAlert robot, msg
     alert.removeWatcher()
 
